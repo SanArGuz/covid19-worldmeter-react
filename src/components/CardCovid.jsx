@@ -19,7 +19,6 @@ const CardCovid = ({
     imgRoute = `http://catamphetamine.gitlab.io/country-flag-icons/3x2/${countryCode}.svg`
   }
 
-  console.log(country)
   return (
     <Fragment>
       <div className="card">
