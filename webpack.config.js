@@ -1,11 +1,11 @@
-const path = require('path');
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path')
+const HtmlWebPackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',
   },
   resolve: {
@@ -13,6 +13,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader'],
+      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
@@ -49,4 +53,4 @@ module.exports = {
       filename: 'assets/[name].css',
     }),
   ],
-};
+}

@@ -1,6 +1,23 @@
-import React from 'react';
-import '../styles/components/App.styl';
+import React, { Fragment } from 'react'
+import Header from './Header'
+import Footer from './Footer'
+import useData from '../hooks/useData'
+import ListCardCovid from './ListCardCovid'
 
-const App = () => <h1>Hello React!</h1>;
+import '../styles/components/App.styl'
 
-export default App;
+const App = () => {
+  const covid = useData(
+    'http://api.coronatracker.com/v3/stats/worldometer/country'
+  )
+
+  return (
+    <Fragment>
+      <Header />
+      <ListCardCovid covid={covid} />
+      <Footer />
+    </Fragment>
+  )
+}
+
+export default App
