@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Muli&display=swap);
+/****  Variables  ****/
+/****  Base  ****/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/****  Header  ****/
+.header {
+  background: #6059c6;
+  height: 200px;
+  color: #efefef;
+}
+.header img {
+  padding-top: 5px;
+  width: 50px;
+}
+.header-fixed {
+  background: #6059c6;
+  font-size: 14px;
+  position: fixed;
+  line-height: 60px;
+  height: 60px;
+  text-indent: 20px;
+  width: 100%;
+}
+.header-notFixed {
+  line-height: 200px;
+  text-align: center;
+  font-size: 28px;
+}
+
+footer {
+  background: #000;
+  width: 100%;
+  height: 2.5em;
+}
+footer div {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  border-bottom: 1px solid #008000;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+  display: flex;
+  margin: 20px;
+  text-align: center;
+}
+.card p {
+  opacity: 0.6;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.card h2 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+}
+.card h2 span {
+  font-size: 1.2rem;
+}
+.card-image {
+  padding: 30px;
+  width: 250px;
+  background-repeat: no-repeat;
+}
+.card-info {
+  padding: 15px;
+  position: relative;
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .social-panel-container.visible {
+    transform: translateX(0px);
+  }
+  .floating-btn {
+    right: 10px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  background-image: linear-gradient(45deg, #7175da, #9790f2);
+  font-family: 'Muli', sans-serif;
+}
+
