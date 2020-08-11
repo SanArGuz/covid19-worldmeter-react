@@ -1,12 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Muli&display=swap);
 /****  Variables  ****/
-/****  Base  ****/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-/****  Header  ****/
 .header {
   background: #6059c6;
   height: 200px;
@@ -24,11 +17,13 @@
   height: 60px;
   text-indent: 20px;
   width: 100%;
+  align-content: center;
 }
 .header-notFixed {
+  display: flex;
   line-height: 200px;
-  text-align: center;
   font-size: 28px;
+  justify-content: center;
 }
 
 footer {
