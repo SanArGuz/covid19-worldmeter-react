@@ -8,7 +8,7 @@ import '../styles/components/App.styl'
 
 const App = () => {
   const covid = useData(
-    'http://api.coronatracker.com/v3/stats/worldometer/country'
+    'https://api.coronatracker.com/v3/stats/worldometer/country'
   )
 
   return (
