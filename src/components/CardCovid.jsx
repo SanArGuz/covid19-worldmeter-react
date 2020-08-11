@@ -13,10 +13,11 @@ const CardCovid = ({
   dailyConfirmed,
   totalRecovered,
 }) => {
-  let imgRoute = 'http://catamphetamine.gitlab.io/country-flag-icons/3x2/US.svg'
+  let imgRoute =
+    'https://catamphetamine.gitlab.io/country-flag-icons/3x2/US.svg'
 
   if (hasFlag(countryCode)) {
-    imgRoute = `http://catamphetamine.gitlab.io/country-flag-icons/3x2/${countryCode}.svg`
+    imgRoute = `https://catamphetamine.gitlab.io/country-flag-icons/3x2/${countryCode}.svg`
   }
 
   return (
@@ -36,11 +37,11 @@ const CardCovid = ({
               {' '}
               {dailyConfirmed}
               {' '}
-| Daily Deaths: 
+              | Daily Deaths: 
               {' '}
               {dailyDeaths}
               {' '}
-|
+              |
               Active Cases: 
               {' '}
               {activeCases}
@@ -51,13 +52,13 @@ const CardCovid = ({
             {' '}
             {totalConfirmed}
             {' '}
-|
+            |
             {' '}
             <b>Total Deaths:</b> 
             {' '}
             {totalDeaths}
             {' '}
-| 
+            | 
             {' '}
             <b>Total Recovered:</b>
             {' '}
