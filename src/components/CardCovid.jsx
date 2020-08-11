@@ -13,11 +13,12 @@ const CardCovid = ({
   dailyConfirmed,
   totalRecovered,
 }) => {
-  let imgRoute =
-    'https://catamphetamine.gitlab.io/country-flag-icons/3x2/US.svg'
+  let imgRoute = ''
 
   if (hasFlag(countryCode)) {
-    imgRoute = `https://catamphetamine.gitlab.io/country-flag-icons/3x2/${countryCode}.svg`
+    imgRoute = countryCode
+  } else {
+    imgRoute = 'US'
   }
 
   return (
@@ -26,7 +27,7 @@ const CardCovid = ({
         <div
           className="card-image"
           style={{
-            backgroundImage: `url(${imgRoute})`,
+            backgroundImage: `url(https://catamphetamine.gitlab.io/country-flag-icons/3x2/${imgRoute}.svg)`,
           }}
         />
         <div className="card-info">
